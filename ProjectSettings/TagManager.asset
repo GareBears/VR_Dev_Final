@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stethoscope
   - Arm
+  - Hand
   layers:
   - Default
   - TransparentFX

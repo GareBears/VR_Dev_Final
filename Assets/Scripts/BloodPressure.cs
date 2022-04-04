@@ -10,6 +10,7 @@ public class BloodPressure : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //If the other object is an arm, onArm is set to true and the location is set to where the cuff should go.
         if (other.CompareTag("Arm"))
         {
             onArm = true;
@@ -28,6 +29,7 @@ public class BloodPressure : MonoBehaviour
         }
     }
 
+    //This function is run by the XR Grab Interactable script when the VR controller no longer is holding the blood pressure cuff.
     public void letGo()
     {
         if (onArm)
