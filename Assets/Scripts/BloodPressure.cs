@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BloodPressure : MonoBehaviour
 {
+    //I need the bool onArm to tell if the user is hovering over an arm, and the location transform is to transfer the location from the onTriggerEnter() function to the letGo() function
     public bool onArm = false;
     private Transform location;
 
