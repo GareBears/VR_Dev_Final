@@ -35,7 +35,7 @@ public class Pulse : MonoBehaviour
 
     IEnumerator HeartbeatR()
     {
-        xr1.SendHapticImpulse(0.5f, 0.1f);
+        //xr1.SendHapticImpulse(0.5f, 0.1f);
         yield return new WaitForSeconds(1f);
     }
 
