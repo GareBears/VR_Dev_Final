@@ -11,6 +11,8 @@ public class Pulse : MonoBehaviour
 {
     public XRController xr1;
     public XRController xr2;
+    private bool vibration = false;
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Hand1"))
@@ -42,4 +44,5 @@ public class Pulse : MonoBehaviour
         //xr.gameObject.GetComponentInParent<XRController>().SendHapticImpulse(0.7f, 2f);
         yield return new WaitForSeconds(1f);
     }
+
 }

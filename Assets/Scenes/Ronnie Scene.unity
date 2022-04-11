@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 478431293}
   - component: {fileID: 478431292}
   - component: {fileID: 478431297}
+  - component: {fileID: 478431296}
   m_Layer: 0
   m_Name: Wrist
   m_TagString: Untagged
@@ -220,6 +221,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478431296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478431291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b076f736932f246b1f25e64c0e4f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &478431297
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -529,6 +542,18 @@ PrefabInstance:
     - target: {fileID: 1310371835815679236, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197799967992661490, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+      propertyPath: m_HapticHoverEnterDuration
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197799967992661490, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+      propertyPath: m_HapticHoverEnterIntensity
+      value: 0.541
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197799967992661490, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+      propertyPath: m_PlayHapticsOnHoverEntered
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2197799967992661490, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
