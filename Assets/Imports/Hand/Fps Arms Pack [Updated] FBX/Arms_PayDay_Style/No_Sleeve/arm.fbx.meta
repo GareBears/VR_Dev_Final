@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 09671c541cc1ccb4daf039a82a6b5921
+guid: a3f06cb1a7042d14385882a361fafe35
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArmsTex
+    second: {fileID: 2100000, guid: 895ba3efcb32e3a42af7928d44327056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandsGloves
+    second: {fileID: 2100000, guid: 97a6343f07bdaa5429792d9beafd8e43, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
