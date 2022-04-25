@@ -249,6 +249,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a749f2947757754f95a4b5b8d24fdf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {fileID: 2197799969202563167}
+  hover: 0
+  held: 0
 --- !u!114 &104204727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +667,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a749f2947757754f95a4b5b8d24fdf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {fileID: 2197799969202563167}
+  hover: 0
+  held: 0
 --- !u!1001 &2197799969202563166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -721,6 +727,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+--- !u!4 &2197799969202563167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7470083721167837257, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+  m_PrefabInstance: {fileID: 2197799969202563166}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3723000582815990844
 PrefabInstance:
   m_ObjectHideFlags: 0

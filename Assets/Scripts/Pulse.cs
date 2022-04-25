@@ -37,10 +37,30 @@ public class Pulse : MonoBehaviour
     */
     void Update()
     {
-        uint channel = 0;
-        float amplitude = 0.5f;
-        float duration = 1.0f;
-        right.SendHapticImpulse(channel, amplitude, duration);
+        /*
+        List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
+        UnityEngine.XR.InputDevices.GetDevicesWithRole(UnityEngine.XR.InputDeviceRole.RightHanded, devices);
+
+        foreach (var device in devices)
+        {
+            UnityEngine.XR.HapticCapabilities capabilities;
+            if (device.TryGetHapticCapabilities(out capabilities))
+            {
+                if (capabilities.supportsImpulse)
+                {
+                    uint channel = 0;
+                    float amplitude = 0.5f;
+                    float duration = 1.0f;
+                    device.SendHapticImpulse(channel, amplitude, duration);
+                    right = device;
+                }
+            }
+        }
+        */
+        //uint channel = 0;
+        //float amplitude = 0.5f;
+        //float duration = 1.0f;
+        //right.SendHapticImpulse(channel, amplitude, duration);
     }
 
 
