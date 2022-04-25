@@ -52,7 +52,7 @@ public class Pulse : MonoBehaviour
                 }
             }
         }
-        yield return new WaitForSeconds(0.78f);
+        yield return new WaitForSeconds(0.79f);
         StartCoroutine("Heartbeat");
     }
 

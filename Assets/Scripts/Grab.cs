@@ -7,6 +7,9 @@ public class Grab : MonoBehaviour
     public Transform pos;
     public bool hover = false;
     public bool held = false;
+    public float yOffset;
+    public float xOffset;
+    public float zOffset;
 
     void FixedUpdate()
     {
@@ -28,7 +31,7 @@ public class Grab : MonoBehaviour
 
         if (held && hover)
         {
-            this.transform.position = pos.position;
+            this.transform.position = new Vector3(pos.position.x + xOffset, pos.position.y + yOffset, pos.position.z + zOffset);
             this.transform.rotation = pos.rotation;
         }
     }
