@@ -4,30 +4,6 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour
 {
-    
-    void Start()
-    {
-        List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
-
-        UnityEngine.XR.InputDevices.GetDevicesWithRole(UnityEngine.XR.InputDeviceRole.RightHanded, devices);
-
-        foreach (var device in devices)
-        {
-            UnityEngine.XR.HapticCapabilities capabilities;
-            if (device.TryGetHapticCapabilities(out capabilities))
-            {
-                if (capabilities.supportsImpulse)
-                {
-                    uint channel = 0;
-                    float amplitude = 0.5f;
-                    float duration = 1.0f;
-                    device.SendHapticImpulse(channel, amplitude, duration);
-                }
-            }
-        }
-    }
-    
-    /*
     public Transform pos;
     public bool hover = false;
     public bool held = false;
@@ -40,11 +16,12 @@ public class Grab : MonoBehaviour
 
     void Update()
     {
-        if (rightHandDevices[0].GetInput("grip") == 1 && hover)
+        /*
+        if (rightHandDevices[0].GetAxis("grip") == 1 && hover)
         {
             held = true;
         }
-        
+        */
         if (held)
         {
             this.transform.position = pos.position;
@@ -61,7 +38,6 @@ public class Grab : MonoBehaviour
             pos.rotation = other.transform.rotation;
         }
     }
-    */
 
 
 }

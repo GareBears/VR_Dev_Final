@@ -9,40 +9,73 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class Pulse : MonoBehaviour
 {
-    public XRController xr1;
-    public XRController xr2;
     private bool vibration = false;
-    
+    //private List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
+    public UnityEngine.XR.InputDevice right;
+
+    /*
+    void Start()
+    {
+        UnityEngine.XR.InputDevices.GetDevicesWithRole(UnityEngine.XR.InputDeviceRole.RightHanded, devices);
+
+        foreach (var device in devices)
+        {
+            UnityEngine.XR.HapticCapabilities capabilities;
+            if (device.TryGetHapticCapabilities(out capabilities))
+            {
+                if (capabilities.supportsImpulse)
+                {
+                    uint channel = 0;
+                    float amplitude = 0.5f;
+                    float duration = 1.0f;
+                    device.SendHapticImpulse(channel, amplitude, duration);
+                    right = device;
+                }
+            }
+        }
+    }
+    */
+    void Update()
+    {
+        uint channel = 0;
+        float amplitude = 0.5f;
+        float duration = 1.0f;
+        right.SendHapticImpulse(channel, amplitude, duration);
+    }
+
+
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Hand1"))
+        if (other.CompareTag("Hand"))
         {
-            StartCoroutine("HeartbeatR");
-        }else if (other.CompareTag("Hand2"))
-        {
-            StartCoroutine("HeartbeatL");
+            if (!vibration)
+            {
+                StartCoroutine("Heartbeat");
+                vibration = true;
+            }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Hand1") || other.CompareTag("Hand2"))
+        if (other.CompareTag("Hand"))
         {
             StopAllCoroutines();
+            vibration = false;
         }
-
     }
 
-    IEnumerator HeartbeatR()
+    IEnumerator Heartbeat()
     {
-        //xr1.SendHapticImpulse(0.5f, 0.1f);
-        yield return new WaitForSeconds(1f);
-    }
-
-    IEnumerator HeartbeatL()
-    {
-        //xr.gameObject.GetComponentInParent<XRController>().SendHapticImpulse(0.7f, 2f);
-        yield return new WaitForSeconds(1f);
+        Debug.Log("Vibrado");
+        uint channel = 0;
+        float amplitude = 0.6f;
+        float duration = 0.1f;
+        right.SendHapticImpulse(channel, amplitude, duration);
+        yield return new WaitForSeconds(0.2f);
+        right.SendHapticImpulse(channel, amplitude, duration);
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine("Heartbeat");
     }
 
 }
