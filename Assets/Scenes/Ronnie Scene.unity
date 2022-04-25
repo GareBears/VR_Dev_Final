@@ -417,10 +417,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 707179054983046805, guid: 70674037ddac43545a58e2e10fa692a5, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1902104585}
     - target: {fileID: 707179054983046826, guid: 70674037ddac43545a58e2e10fa692a5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -530,7 +526,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodPressureThing
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2163092744719791547, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
 --- !u!1001 &2197799969202563166
 PrefabInstance:

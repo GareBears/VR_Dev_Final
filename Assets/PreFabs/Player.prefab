@@ -1384,7 +1384,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2197799967992661494}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
@@ -1491,7 +1491,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2197799967992661494}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2197799967992661494}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
@@ -2077,7 +2077,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2197799969227824965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
@@ -2184,7 +2184,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2197799969227824965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2282,7 +2282,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2197799969227824965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
@@ -4989,6 +4989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5974781870351451858}
   - component: {fileID: 3163110435002085902}
+  - component: {fileID: 2197799969202563168}
   m_Layer: 0
   m_Name: ArmsPayDay
   m_TagString: Hand
@@ -5135,6 +5136,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.33887768, y: -0.06617579, z: -0.042253226}
     m_Extent: {x: 0.2475384, y: 0.13726561, z: 0.09837434}
   m_DirtyAABB: 0
+--- !u!135 &2197799969202563168
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7248213027898695265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.14549243
+  m_Center: {x: 0.048851207, y: 0.09615952, z: 0.11703016}
 --- !u!1 &7382298221498602250
 GameObject:
   m_ObjectHideFlags: 0
@@ -5342,7 +5356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7636805429049375981}
   m_LocalRotation: {x: -0.4312332, y: 0.371181, z: 0.603405, w: 0.55871737}
-  m_LocalPosition: {x: -0.059, y: 0.021, z: -0.911}
+  m_LocalPosition: {x: -0.059, y: 0.035, z: -0.878}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8517767264919976326}
@@ -5899,7 +5913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8437872626710197476}
   m_LocalRotation: {x: 0.55780053, y: -0.5975224, z: 0.4210794, w: 0.39308748}
-  m_LocalPosition: {x: 0.18200016, y: 0.007999897, z: -0.9359999}
+  m_LocalPosition: {x: 0.18200016, y: 0.021999836, z: -0.9029999}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_Children:
   - {fileID: 7698633443760927119}
@@ -5979,7 +5993,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5622895960506011355}
   - component: {fileID: 3965307664135617031}
-  - component: {fileID: 8679818815523788393}
   m_Layer: 0
   m_Name: ArmsPayDay
   m_TagString: Hand
@@ -6106,19 +6119,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.5265307, y: 0.12383955, z: -0.06231918}
     m_Extent: {x: 0.3846587, y: 0.21330237, z: 0.1528674}
   m_DirtyAABB: 0
---- !u!135 &8679818815523788393
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8679818815523788392}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.10921237
-  m_Center: {x: 0.04885122, y: -0.038188964, z: -0.27658978}
 --- !u!1 &8698820955836667495
 GameObject:
   m_ObjectHideFlags: 0
