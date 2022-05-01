@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pos: {fileID: 2197799969202563167}
+  tempPos: {fileID: 0}
   hover: 0
   held: 0
   yOffset: 0
@@ -587,7 +588,7 @@ GameObject:
   - component: {fileID: 1943383710}
   - component: {fileID: 1943383709}
   m_Layer: 0
-  m_Name: stethoscope
+  m_Name: Stethoscope
   m_TagString: Stethoscope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943383706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: 1.45, z: 1.9215542}
+  m_LocalPosition: {x: -0.13, y: 0.859, z: 2.534}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_Children: []
   m_Father: {fileID: 0}
@@ -698,6 +699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pos: {fileID: 2197799969202563167}
+  tempPos: {fileID: 1943383711}
   hover: 0
   held: 0
   yOffset: 0
@@ -705,8 +707,8 @@ MonoBehaviour:
   zOffset: 0
   grabMesh: {fileID: -4958524864055489367, guid: f1cb3c01847998e4f90ca254f1f4e8b3, type: 3}
   nonGrabMesh: {fileID: 5302568919011541938, guid: 99ba191a72e6bea4ba4b4af7c9d1bed5, type: 3}
-  grabMat: {fileID: 0}
-  nonGrabMat: {fileID: 0}
+  grabMat: {fileID: 2100000, guid: cc956248460a667479afd00b7ce49f6d, type: 2}
+  nonGrabMat: {fileID: 2100000, guid: b18e15e92917bf641b24ed229351664d, type: 2}
 --- !u!1001 &2197799969202563166
 PrefabInstance:
   m_ObjectHideFlags: 0

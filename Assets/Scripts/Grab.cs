@@ -5,6 +5,7 @@ using UnityEngine;
 public class Grab : MonoBehaviour
 {
     public Transform pos;
+    public Transform tempPos;
     public bool hover = false;
     public bool held = false;
     public float yOffset;
@@ -17,6 +18,8 @@ public class Grab : MonoBehaviour
 
     void FixedUpdate()
     {
+        
+
         List<UnityEngine.XR.InputDevice> rightHandDevices = new List<UnityEngine.XR.InputDevice>();
         UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.RightHand, rightHandDevices);
         foreach (var device in rightHandDevices)
@@ -35,11 +38,12 @@ public class Grab : MonoBehaviour
 
         if (held && hover)
         {
-            this.transform.position = new Vector3(pos.position.x + xOffset, pos.position.y + yOffset, pos.position.z + zOffset);
+            this.transform.position = new Vector3(pos.position.x, pos.position.y, pos.position.z);
             this.transform.rotation = pos.rotation;
             if (grabMesh != null)
             {
                 this.gameObject.GetComponent<MeshFilter>().sharedMesh = grabMesh;
+                this.gameObject.GetComponent<MeshRenderer>().material = grabMat;
             }
         }
         else
@@ -47,6 +51,7 @@ public class Grab : MonoBehaviour
             if (nonGrabMesh != null)
             {
                 this.gameObject.GetComponent<MeshFilter>().sharedMesh = nonGrabMesh;
+                this.gameObject.GetComponent<MeshRenderer>().material = nonGrabMat;
             }
         }
     }
