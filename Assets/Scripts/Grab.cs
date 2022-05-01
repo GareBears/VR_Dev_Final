@@ -10,6 +10,10 @@ public class Grab : MonoBehaviour
     public float yOffset;
     public float xOffset;
     public float zOffset;
+    public Mesh grabMesh;
+    public Mesh nonGrabMesh;
+    public Material grabMat;
+    public Material nonGrabMat;
 
     void FixedUpdate()
     {
@@ -33,6 +37,17 @@ public class Grab : MonoBehaviour
         {
             this.transform.position = new Vector3(pos.position.x + xOffset, pos.position.y + yOffset, pos.position.z + zOffset);
             this.transform.rotation = pos.rotation;
+            if (grabMesh != null)
+            {
+                this.gameObject.GetComponent<MeshFilter>().sharedMesh = grabMesh;
+            }
+        }
+        else
+        {
+            if (nonGrabMesh != null)
+            {
+                this.gameObject.GetComponent<MeshFilter>().sharedMesh = nonGrabMesh;
+            }
         }
     }
 
