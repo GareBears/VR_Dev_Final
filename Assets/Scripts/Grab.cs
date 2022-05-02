@@ -5,7 +5,6 @@ using UnityEngine;
 public class Grab : MonoBehaviour
 {
     public Transform pos;
-    public Transform tempPos;
     public bool hover = false;
     public bool held = false;
     public float yOffset;
@@ -15,6 +14,9 @@ public class Grab : MonoBehaviour
     public Mesh nonGrabMesh;
     public Material grabMat;
     public Material nonGrabMat;
+    public float xRotOffset;
+    public float yRotOffset;
+    public float zRotOffset;
 
     void FixedUpdate()
     {
@@ -38,8 +40,8 @@ public class Grab : MonoBehaviour
 
         if (held && hover)
         {
-            this.transform.position = new Vector3(pos.position.x, pos.position.y, pos.position.z);
-            this.transform.rotation = pos.rotation;
+            this.transform.position = new Vector3(pos.position.x + xOffset, pos.position.y + yOffset, pos.position.z + zOffset);
+            this.transform.rotation = pos.rotation * Quaternion.Euler(new Vector3(xRotOffset, yRotOffset, zRotOffset));
             if (grabMesh != null)
             {
                 this.gameObject.GetComponent<MeshFilter>().sharedMesh = grabMesh;
