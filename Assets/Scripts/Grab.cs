@@ -7,9 +7,6 @@ public class Grab : MonoBehaviour
     public Transform pos;
     public bool hover = false;
     public bool held = false;
-    public float yOffset;
-    public float xOffset;
-    public float zOffset;
     public Mesh grabMesh;
     public Mesh nonGrabMesh;
     public Material grabMat;
@@ -40,7 +37,7 @@ public class Grab : MonoBehaviour
 
         if (held && hover)
         {
-            this.transform.position = new Vector3(pos.position.x + xOffset, pos.position.y + yOffset, pos.position.z + zOffset);
+            this.transform.position = pos.position;
             this.transform.rotation = pos.rotation * Quaternion.Euler(new Vector3(xRotOffset, yRotOffset, zRotOffset));
             if (grabMesh != null)
             {
