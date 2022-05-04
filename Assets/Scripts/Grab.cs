@@ -24,7 +24,7 @@ public class Grab : MonoBehaviour
         foreach (var device in rightHandDevices)
         {
             bool triggerValue;
-            device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue);
+            device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out triggerValue);
             if (triggerValue)
             {
                 held = true;
