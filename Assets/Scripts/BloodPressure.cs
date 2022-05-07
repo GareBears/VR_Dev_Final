@@ -13,6 +13,8 @@ public class BloodPressure : MonoBehaviour
     public AudioClip clip1;
     public AudioClip clip2;
     public AudioSource audio;
+    public GameObject monitor;
+    public Material on;
 
     void Update()
     {
@@ -59,12 +61,13 @@ public class BloodPressure : MonoBehaviour
     {
         audio.clip = clip1;
         audio.Play();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
         audio.Stop();
         yield return new WaitForSeconds(0.4f);
         audio.clip = clip2;
         audio.Play();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
         audio.Stop();
+        monitor.GetComponent<MeshRenderer>().material = on;
     }
 }
