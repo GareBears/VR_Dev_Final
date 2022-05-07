@@ -9,6 +9,9 @@ public class BloodPressure : MonoBehaviour
     private Transform location;
     public Mesh attached;
     public Material attach;
+    public AudioClip clip1;
+    public AudioClip clip2;
+    public AudioSource audio;
 
     void Update()
     {
@@ -20,6 +23,7 @@ public class BloodPressure : MonoBehaviour
                 this.transform.rotation = location.rotation;
                 this.gameObject.GetComponent<MeshFilter>().sharedMesh = attached;
                 this.gameObject.GetComponent<MeshRenderer>().material = attach;
+                StartCoroutine("Inflate");
             }
         }
     }
@@ -43,5 +47,10 @@ public class BloodPressure : MonoBehaviour
                 onArm = false;
             }
         }
+    }
+
+    IEnumerator Inflate()
+    {
+
     }
 }
