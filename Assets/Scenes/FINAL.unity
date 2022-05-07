@@ -555,6 +555,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8a618bf2d2109a469b2460ec7c66b62, type: 3}
   m_PrefabInstance: {fileID: 64363062}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &100173525 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 752297656664449322, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+  m_PrefabInstance: {fileID: 1561796647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &111547795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2851,6 +2856,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 100173525}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: clip1
+      value: 
+      objectReference: {fileID: 8300000, guid: 85a9a9c8628444f4c859e937d8d9df52, type: 3}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: clip2
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dc7adc9fb08ffe4cacf5eb0fdb24878, type: 3}
     - target: {fileID: 2163092744719791549, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
       propertyPath: m_Name
       value: BloodPressureCuff (2)
@@ -6466,6 +6483,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 100173525}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: clip1
+      value: 
+      objectReference: {fileID: 8300000, guid: 85a9a9c8628444f4c859e937d8d9df52, type: 3}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: clip2
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dc7adc9fb08ffe4cacf5eb0fdb24878, type: 3}
     - target: {fileID: 2163092744719791549, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
       propertyPath: m_Name
       value: BloodPressureCuff
@@ -8420,6 +8449,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 100173525}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: clip1
+      value: 
+      objectReference: {fileID: 8300000, guid: 85a9a9c8628444f4c859e937d8d9df52, type: 3}
+    - target: {fileID: 2163092744719791546, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
+      propertyPath: clip2
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dc7adc9fb08ffe4cacf5eb0fdb24878, type: 3}
     - target: {fileID: 2163092744719791549, guid: 6bc63a04d83bba347b2a0d88f349793f, type: 3}
       propertyPath: m_Name
       value: BloodPressureCuff (1)
