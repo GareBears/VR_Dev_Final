@@ -6,6 +6,7 @@ public class BloodPressure : MonoBehaviour
 {
     //I need the bool onArm to tell if the user is hovering over an arm, and the location transform is to transfer the location from the onTriggerEnter() function to the letGo() function
     public bool onArm = false;
+    private bool inflating = false;
     private Transform location;
     public Mesh attached;
     public Material attach;
@@ -23,7 +24,11 @@ public class BloodPressure : MonoBehaviour
                 this.transform.rotation = location.rotation;
                 this.gameObject.GetComponent<MeshFilter>().sharedMesh = attached;
                 this.gameObject.GetComponent<MeshRenderer>().material = attach;
-                StartCoroutine("Inflate");
+                if (!inflating)
+                {
+                    StartCoroutine("Inflate");
+                    inflating = true;
+                }
             }
         }
     }
@@ -45,12 +50,21 @@ public class BloodPressure : MonoBehaviour
             if (onArm)
             {
                 onArm = false;
+                inflating = false;
             }
         }
     }
 
     IEnumerator Inflate()
     {
-
+        audio.clip = clip1;
+        audio.Play();
+        yield return new WaitForSeconds(1.5f);
+        audio.Stop();
+        yield return new WaitForSeconds(0.4f);
+        audio.clip = clip2;
+        audio.Play();
+        yield return new WaitForSeconds(1.5f);
+        audio.Stop();
     }
 }
