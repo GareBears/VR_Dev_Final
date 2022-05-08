@@ -624,8 +624,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 221811063}
-  - {fileID: 1026436700}
   - {fileID: 1373425411}
+  - {fileID: 1026436700}
   - {fileID: 1168278191}
   - {fileID: 1897910999}
   - {fileID: 453385798}
@@ -6749,6 +6749,18 @@ PrefabInstance:
     - target: {fileID: 1310371835815679236, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197799968913699351, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+      propertyPath: m_LeftHandSnapTurnAction.m_Reference
+      value: 
+      objectReference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 2197799968913699351, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+      propertyPath: m_LeftHandSnapTurnAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197799968913699351, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
+      propertyPath: m_RightHandSnapTurnAction.m_UseReference
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2462406673298266966, guid: 23e5420eae68b4b4b86d18c8db70f634, type: 3}
       propertyPath: m_RootOrder
